@@ -1,0 +1,5 @@
+1. When there is a need to traverse an array, instead of using two loops, it can be done in a single loop
+  ex: Given array arr=[1,2,3,4,5] increament each element by k in the given range (start,end)
+      Sol: Instead of using two loops create another array brr(empty) of the same size, do brr[start]+=k and brr[end+1]-=k(only if end+1 exists)
+           What we are doing here is basically storing the differences between each consecutive elements of brr. Now, run a loop from 1 to n and do brr[i]+=brr[i-1]
+           After this, complete the required computation. 
