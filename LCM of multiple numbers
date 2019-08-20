@@ -1,0 +1,21 @@
+LCM of two numbers a and b is given by, lcm=(a*b)/gcd(a,b), this does not hold good for more than 2 numbers. 
+2 ways to find LCM for more than 2 numbers in python:
+  1st way : using gcd func from math in python
+            lcm=arr[0]
+            for i in arr[1:]:
+              lcm=lcm*i//gcd(lcm,i)
+              
+   2nd way : Without using gcd
+              first find the lcm of arr[0] and arr[1]
+              let x=arr[0] and y=arr[1]
+              if x > y:  
+                greater = x  
+              else:  
+                greater = y  
+              while(True): //loops forever  
+                if((greater % x == 0) and (greater % y == 0)):  
+                    lcm = greater  
+                     break  
+                greater =  greater + 1
+              
+            repeat this function recursively by using a for loop to call the above func while passing (lcm,arr[i]) as parameters.
