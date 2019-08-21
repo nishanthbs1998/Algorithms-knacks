@@ -1,0 +1,9 @@
+Sum of first n natural numbers= n(n+1)/2
+Sum of first n^2 natural numbers= n(n+1)(2n+1)/6
+Sum of first n^3 natural numbers= (n(n+1)/2)^2
+
+LCM of two numbers a and b is given by, lcm = (a*b)/gcd(a,b) [ in python gcd can be imported as 'from math import gcd']
+
+Sum of an AP series = n(a+l)/2, where n-> no. of terms
+                                      a-> first term
+                                      l-> last term
