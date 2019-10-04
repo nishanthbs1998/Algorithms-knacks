@@ -1,0 +1,19 @@
+Catalon numbers using binomial coefficient method(refer https://www.geeksforgeeks.org/program-nth-catalan-number/)
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long int n;
+   cout << "Enter the value of n" << endl;
+   cin>>n;
+   long long int upper=2*n,lower=n,res=1;
+ //  if(lower>upper-lower)
+        //lower=upper-lower;
+   for(int i=0;i<lower;i++)
+   {
+       res*=(upper-i);
+       res/=(i+1);
+   }
+   cout<<"The nth catalon number is "<<res/(lower+1)<<endl;
+   return 0;
+}
